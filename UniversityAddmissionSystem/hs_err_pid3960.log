@@ -1,0 +1,139 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 229376 bytes for CodeCache: no room for Interpreter
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (stubs.cpp:70), pid=3960, tid=0x000016b0
+#
+# JRE version:  (8.0_102-b14) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.102-b14 mixed mode, sharing windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x02185000):  JavaThread "Unknown thread" [_thread_in_vm, id=5808, stack(0x00520000,0x00570000)]
+
+Stack: [0x00520000,0x00570000],  sp=0x0056f8c4,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1a9dbb]
+V  [jvm.dll+0x1a2598]
+V  [jvm.dll+0x6bb6f]
+V  [jvm.dll+0x88fe2]
+V  [jvm.dll+0x7bfe5]
+V  [jvm.dll+0x17d3eb]
+V  [jvm.dll+0xe6881]
+C  [javaw.exe+0x14d3]
+C  [javaw.exe+0x2047]
+C  [javaw.exe+0xaecf]
+C  [javaw.exe+0xaf59]
+C  [kernel32.dll+0x13677]
+C  [ntdll.dll+0x39d72]
+C  [ntdll.dll+0x39d45]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x02185000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5808, stack(0x00520000,0x00570000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00a00000 - 0x00a33000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\javaw.exe
+0x77990000 - 0x77b10000 	C:\Windows\SysWOW64\ntdll.dll
+0x76f80000 - 0x77080000 	C:\Windows\syswow64\kernel32.dll
+0x75eb0000 - 0x75ef6000 	C:\Windows\syswow64\KERNELBASE.dll
+0x76630000 - 0x766d0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x762a0000 - 0x7634c000 	C:\Windows\syswow64\msvcrt.dll
+0x76ce0000 - 0x76cf9000 	C:\Windows\SysWOW64\sechost.dll
+0x76350000 - 0x76440000 	C:\Windows\syswow64\RPCRT4.dll
+0x75060000 - 0x750c0000 	C:\Windows\syswow64\SspiCli.dll
+0x75050000 - 0x7505c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x761a0000 - 0x762a0000 	C:\Windows\syswow64\USER32.dll
+0x760c0000 - 0x76150000 	C:\Windows\syswow64\GDI32.dll
+0x750c0000 - 0x750ca000 	C:\Windows\syswow64\LPK.dll
+0x76840000 - 0x768dd000 	C:\Windows\syswow64\USP10.dll
+0x6f810000 - 0x6f9ae000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc\COMCTL32.dll
+0x75e50000 - 0x75ea7000 	C:\Windows\syswow64\SHLWAPI.dll
+0x75d20000 - 0x75d80000 	C:\Windows\system32\IMM32.DLL
+0x764d0000 - 0x7659c000 	C:\Windows\syswow64\MSCTF.dll
+0x74e70000 - 0x74ec0000 	C:\Program Files\Citrix\System32\MfApHook.dll
+0x74e40000 - 0x74e6f000 	C:\Program Files\Citrix\ICAService\picaFullScreenHookX86.dll
+0x74e00000 - 0x74e32000 	C:\Program Files\Citrix\ICAService\ShellHook.dll
+0x768e0000 - 0x76a3c000 	C:\Windows\syswow64\ole32.dll
+0x750d0000 - 0x75d19000 	C:\Windows\syswow64\SHELL32.dll
+0x74cd0000 - 0x74df4000 	C:\Program Files\Citrix\ICAService\SCardHook.dll
+0x74c60000 - 0x74cd0000 	C:\Program Files\Citrix\ICAService\twnhook.dll
+0x74c30000 - 0x74c57000 	C:\Program Files\Citrix\ICAService\cxinjime.dll
+0x74be0000 - 0x74c21000 	C:\Program Files\Citrix\ICAService\PicaWtsHook.dll
+0x642b0000 - 0x6436f000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\msvcr100.dll
+0x6b180000 - 0x6b54d000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\client\jvm.dll
+0x749c0000 - 0x749c7000 	C:\Windows\system32\WSOCK32.dll
+0x766d0000 - 0x76705000 	C:\Windows\syswow64\WS2_32.dll
+0x75d80000 - 0x75d86000 	C:\Windows\syswow64\NSI.dll
+0x74a80000 - 0x74ab2000 	C:\Windows\system32\WINMM.dll
+0x6fc20000 - 0x6fc29000 	C:\Windows\system32\VERSION.dll
+0x76d00000 - 0x76d05000 	C:\Windows\syswow64\PSAPI.DLL
+0x73ed0000 - 0x73edc000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\verify.dll
+0x6d250000 - 0x6d271000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\java.dll
+0x6d230000 - 0x6d243000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: com.capgemini.uas.ui.MainUi
+java_class_path (initial): P:\miniproject6\UniversityAddmissionSystem\bin;C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc6.jar;C:\FOR KATHIR\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar;C:\FOR KATHIR\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files (x86)/Java/jre1.8.0_102/bin/client;C:/Program Files (x86)/Java/jre1.8.0_102/bin;C:/Program Files (x86)/Java/jre1.8.0_102/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\oracle\product\10.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Citrix\System32\;C:\Program Files\Citrix\ICAService\;C:\Program Files\Citrix\Virtual Desktop Agent\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\oracle\product\10.2.0\client_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Citrix\System32\;C:\Program Files\Citrix\ICAService\;C:\Program Files\Citrix\Virtual Desktop Agent\;P:\Users\ashukla6\AppData\Local\Programs\Git\cmd;C:\FOR KATHIR\eclipse;
+USERNAME=ashukla6
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 62 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7600 (6.1.7600.16385)
+
+CPU:total 1 (1 cores per cpu, 1 threads per core) family 6 model 62 stepping 4, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, aes, clmul, erms, tsc
+
+Memory: 4k page, physical 2096696k(130116k free), swap 5257012k(5100k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.102-b14) for windows-x86 JRE (1.8.0_102-b14), built on Jun 22 2016 13:13:29 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Oct 07 12:52:15 2017
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
